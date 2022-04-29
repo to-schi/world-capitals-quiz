@@ -13,7 +13,7 @@ st.title('World Capitals Quiz \n *for Xenia*')
 st.markdown("""
 <style>
 div.stButton > button:first-child {
-     background-color: rgb( 0, 131, 184) 
+     background-color: rgb( 0, 131, 184)
  }
  </style>""", unsafe_allow_html=True)
 # hide menu
@@ -30,7 +30,7 @@ end = st.sidebar.button("Quit")
 next = second.button("Next")
 
 # Dictionary of all capitals and capitals in Europe
-df = pd.read_csv("./data/countries.csv", sep=";", header=None)
+df = pd.read_csv("./data/capitals.csv", sep=";", header=None)
 world = dict(zip(df[1],df[0]))
 
 # initiate necessary session_state-variables #########
@@ -70,7 +70,7 @@ def grade(perc):
     elif perc > 60:
         grade = "pretty good! ( ͡° ͜ ͡°)"
     elif perc > 40:
-        grade = "ok! (~ • ᴥ •)~" 
+        grade = "ok! (~ • ᴥ •)~"
     elif perc > 20:
         grade = "pretty bad! (ɔ ᴗ_ᴗ)ɔ"
     else:
