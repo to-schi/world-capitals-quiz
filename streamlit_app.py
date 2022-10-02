@@ -106,7 +106,9 @@ def check_distance(target, entry):
 
 def main():
     capital = st.session_state["capital"]
-    first.markdown(f"Which country has **{capital}** as it's capital?")
+    first.markdown(
+        f"Which country has **{capital}** as it's capital? [(Wikipedia)](https://en.wikipedia.org/wiki/{capital.replace(' ', '_')})"
+    )
     country = first.text_input("", "", key=st.session_state["questions"])
     if country != st.session_state["last"] and country != "":
         st.session_state["last"] = country
