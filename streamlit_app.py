@@ -1,3 +1,6 @@
+"""
+A quiz app for learning the capitals of the world made with streamlit.
+"""
 import logging
 from random import randint
 
@@ -73,18 +76,18 @@ def new():
 
 def grade(perc):
     if perc == 100:
-        grade = "fantastic! (⊃｡•́‿•̀｡)⊃"
+        grad = "fantastic! (⊃｡•́‿•̀｡)⊃"
     elif perc > 80:
-        grade = "very good! (ɔ ᵔᴗᵔ)ɔ"
+        grad = "very good! (ɔ ᵔᴗᵔ)ɔ"
     elif perc > 60:
-        grade = "pretty good! ( ͡° ͜ ͡°)"
+        grad = "pretty good! ( ͡° ͜ ͡°)"
     elif perc > 40:
-        grade = "ok! (~ • ᴥ •)~"
+        grad = "ok! (~ • ᴥ •)~"
     elif perc > 20:
-        grade = "pretty bad! (ɔ ᴗ_ᴗ)ɔ"
+        grad = "pretty bad! (ɔ ᴗ_ᴗ)ɔ"
     else:
-        grade = "sad! (ɔ •︵•)ɔ"
-    return grade
+        grad = "sad! (ɔ •︵•)ɔ"
+    return grad
 
 
 def reset():
